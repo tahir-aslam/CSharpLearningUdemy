@@ -7,8 +7,11 @@ namespace Events
     {
         public class VideoEncoder
         {
-            public delegate void VideoEncodedEventHandler(object sender, EventArgs e);
-            public event VideoEncodedEventHandler VideoEncoded;
+            //public delegate void VideoEncodedEventHandler(object sender, EventArgs e);
+            //public event VideoEncodedEventHandler VideoEncoded;
+
+            //EventHandler
+            public event EventHandler<EventArgs> VideoEncoded;
 
             public void Encode(Video video)
             {
