@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.32510.428
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpLearningUdemy", "CSharpLearningUdemy\CSharpLearningUdemy.csproj", "{C9156036-02F1-4DEF-883D-DD1236525D2C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventsAndDelegates", "EventsAndDelegates\EventsAndDelegates.csproj", "{E6616BFE-5F45-4B8C-9A0A-3A3E4E0E0B9A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Delegates", "EventsAndDelegates\Delegates.csproj", "{E6616BFE-5F45-4B8C-9A0A-3A3E4E0E0B9A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Events", "Events\Events.csproj", "{DFED5536-64D4-4D9D-82C7-722395241E93}"
 EndProject
