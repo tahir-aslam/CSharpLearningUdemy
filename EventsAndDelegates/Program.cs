@@ -10,6 +10,22 @@ namespace EventsAndDelegates
     {
         static void Main(string[] args)
         {
+            var photoProcessor = new PhotoProcessor();
+            var filters = new Photofilters();
+
+            PhotoProcessor.PhotoFilterHandler photoFilterHandler = filters.ApplyBrightness;
+            photoFilterHandler += filters.ApplyContrast;
+            photoFilterHandler += filters.Resize;
+            photoFilterHandler += RemoveRedEye;
+
+            photoProcessor.Process("photo.png", photoFilterHandler);            
+
+            Console.ReadKey();
+        }
+
+        static void RemoveRedEye(Photo photo)
+        {
+            Console.WriteLine("Remove red eye......");
         }
     }
 }
