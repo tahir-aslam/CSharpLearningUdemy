@@ -13,7 +13,8 @@ namespace EventsAndDelegates
             var photoProcessor = new PhotoProcessor();
             var filters = new Photofilters();
 
-            PhotoProcessor.PhotoFilterHandler photoFilterHandler = filters.ApplyBrightness;
+            Action<Photo> photoFilterHandler = filters.ApplyBrightness;
+            //PhotoProcessor.PhotoFilterHandler photoFilterHandler = filters.ApplyBrightness;
             photoFilterHandler += filters.ApplyContrast;
             photoFilterHandler += filters.Resize;
             photoFilterHandler += RemoveRedEye;
