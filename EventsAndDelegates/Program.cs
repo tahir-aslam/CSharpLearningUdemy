@@ -13,8 +13,9 @@ namespace EventsAndDelegates
             var photoProcessor = new PhotoProcessor();
             var filters = new Photofilters();
 
+            // use generic delegate from .net instead of custome
             Action<Photo> photoFilterHandler = filters.ApplyBrightness;
-            //PhotoProcessor.PhotoFilterHandler photoFilterHandler = filters.ApplyBrightness;
+            //PhotoProcessor.PhotoFilterHandler photoFilterHandler = filters.ApplyBrightness; 
             photoFilterHandler += filters.ApplyContrast;
             photoFilterHandler += filters.Resize;
             photoFilterHandler += RemoveRedEye;
